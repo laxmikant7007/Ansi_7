@@ -3,8 +3,21 @@
   become: yes
   tasks: 
           
-          - name: i want install tree
+          - name: i want install web
             apt:
              
-                   name: tree
+                   name: apache2
                    state: present
+
+            when: ansible_os_family=="Debian"  
+
+          - name: i want start/stop on ubuntu
+            service:
+
+                   name: apache2
+                   state: started   
+
+            when: ansible_os_family=="Debian" 
+          
+             
+                       
