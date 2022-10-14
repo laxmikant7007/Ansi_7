@@ -14,4 +14,9 @@
 172.31.30.74
 
 
+[webserverHost:vars]
+mywebserveronubuntu= apache2
+mywebserveronubuntu= httpd
+
+
 
