@@ -11,25 +11,25 @@
 
             when: ansible_os_family=="Debian"  
 
-          - name: i want start/stop on ubuntu
+          - name: i want start/stop web on ubuntu
             service:
 
-                   name: "{{mywebserveronubuntu}}"
-                   state: started   
+                  name: "{{mywebserveronubuntu}}"
+                  state: started   
 
             when: ansible_os_family=="Debian" 
 
-          - name: i want install webserver on Redhat 
+          - name: i want install web on Redhat 
             yum:
                   name: "{{mywebserveronRedhat}}"
                   state: present 
 
             when: ansible_os_family=="RedHat"
 
-          - name: i want to start/stop webserver on Redhat
+          - name: i want to start/stop web on Redhat
             service: 
-                   name: "{{mywebserveronRedhat}}"
-                   state: started
+                  name: "{{mywebserveronRedhat}}"
+                  state: started
 
             when: ansible_os_family=="RedHat"     
              
