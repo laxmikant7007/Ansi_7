@@ -4,6 +4,7 @@
 
 
 
+
 [DBserver]
 172.31.30.70
 172.31.30.71
@@ -15,7 +16,7 @@
 
 
 [webserverHost:vars]
-mywebserveronubuntu= apache22222
+mywebserveronubuntu= apache2772
 mywebserveronRedhat= httpd
 
 
