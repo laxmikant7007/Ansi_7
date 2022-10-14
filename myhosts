@@ -3,12 +3,12 @@
 172.31.23.105
     
   
- [DBserver]
+[DBserver]
 172.31.30.70
 172.31.30.71
 
 
- [Networkserver]
+[Networkserver]
 172.31.30.77
 172.31.30.74
 
