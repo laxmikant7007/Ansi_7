@@ -18,10 +18,11 @@
                    state: started   
 
             when: ansible_os_family=="Debian" 
+
           - name: i want install webserver on Redhat 
             yum:
                   name: "{{mywebserveronRedhat}}"
-                  state: latest
+                  state: present 
 
             when: ansible_os_family=="RedHat"
 
