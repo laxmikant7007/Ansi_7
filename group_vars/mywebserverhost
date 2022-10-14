@@ -1,6 +1,6 @@
 ---
 
-[webserverHost:vars]
+
 mywebserveronubuntu : apache2
 mywebserveronRedhat : httpd
 myjavapackforubuntu : openjdk-8-jre
