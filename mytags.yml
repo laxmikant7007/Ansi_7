@@ -13,6 +13,7 @@
                      name: wget
                      stdate: present 
              tags: mywget
+             ignore_errors: yes
 
            - name: i want to install git 
              apt:
