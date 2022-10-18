@@ -11,10 +11,9 @@
            - name: i wannt to install wget
              apt:
                      name: wget
-                     state: present 
+                     stdate: present 
              tags: mywget
-             ignore_errors: yes
-             
+
            - name: i want to install git 
              apt:
                      name: git
