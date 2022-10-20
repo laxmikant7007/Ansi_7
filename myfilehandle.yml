@@ -2,10 +2,7 @@
 - hosts: 172.31.39.3
   become: yes
   tasks:
-          - name: i want to create file
-            file:
-                     path: /home/ubuntu/myf1.txt
-                     state: touch
+          - include_tasks: myfile.yml
 
           - name: i want to install webserver
             apt: 
