@@ -2,4 +2,4 @@
 - hosts: webserverHost
   become: yes
   roles:
-     - { role: webrole , ansible_os_family=="Debian",ansible_os_family=="RedHat"}
+     - { role: webrole , ansible_os_family=="Debian", ansible_os_family=="RedHat"}
