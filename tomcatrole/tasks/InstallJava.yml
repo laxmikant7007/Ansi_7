@@ -5,7 +5,6 @@
       update_cache: yes
 
 # Step 1.2 : install the Java Development Kit package with apt 
-
 - name: install java jdk
   apt:
       name: default-jdk
