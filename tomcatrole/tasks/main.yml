@@ -4,3 +4,7 @@
  - include_tasks: CreateTomcatUser.yml
  - include_tasks: InstallTomcat.yml
  - include_tasks: UpdatePermission.yml 
+ - include_tasks: CreateasystemdServiceFile.yml
+ - include_tasks: servicestart.yml
+ - include_tasks: TomcatWebManagementInterface.yml
+ - include_tasks: RestartTomcat.yml
