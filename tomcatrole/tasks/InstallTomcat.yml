@@ -26,4 +26,4 @@
 - name: i want to extract the tomcat file
   command:
     cmd: sudo tar xzvf /home/ubuntu/tmp -C /opt/tomcat --strip-components=1
-    dest: /opt/tomcat/LICENSE
+    creates: /opt/tomcat/LICENSE
