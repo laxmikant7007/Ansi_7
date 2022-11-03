@@ -9,7 +9,7 @@
     group: tomcat
 
 # Step 4.2 :  give the tomcat group read access to the conf directory
-- name: vgive the tomcat group read access to the conf directory
+- name: give the tomcat group read access to the conf directory
   file:
     path: /opt/tomcat/conf
     recurse: yes
@@ -21,7 +21,6 @@
 - name: give the tomcat group execute access to the conf directory
   file:
     path: /opt/tomcat/conf
-    recurse: yes
     owner: tomcat
     group: tomcat
     mode: g+r
