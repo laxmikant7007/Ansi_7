@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+           - name: create ansible node
+             ec2:
+                      key_name: yamaha
+                      instance_type: t2.micro
+                      image: ami-045e3a48172c76aae
+                      wait: yes
+                      region: us-east-2
+                      group: launch-wizard-31
+                      count: 3
+                      vpc_subnet_id: subnet-0641db191cc7c598b
+                      assign_public_ip: yes
+                      instance_tags:
+                           name: myAnsiblenode
+                    
