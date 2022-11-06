@@ -1,5 +1,5 @@
 ---
-# Step 3.1 : /tmp directory on your server
+# Step 3.1 : /ntr directory on your server
 - name: i want to create directory ntr
   file:
            path: /home/ubuntu/ntr
