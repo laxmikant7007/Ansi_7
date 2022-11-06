@@ -15,12 +15,12 @@
  # Step 3.3 : /opt/tomcat directory on your server
 - name: i want to create directory ntr
   file: 
-           path: /opt/tomcat
+           path: /opt/tomcat1
            state: directory
 
 
 # Step 3.4 : extract the archive file to /opt/tomcat
 - name: i want to extract the tomcat file
   command:
-    cmd: sudo tar xzvf /home/ubuntu/ntr -C /opt/tomcat --strip-components=1
-    creates: /opt/tomcat/LICENSE
+    cmd: sudo tar xzvf /home/ubuntu/ntr -C /opt/tomcat1 --strip-components=1
+    creates: /opt/tomcat1/LICENSE
