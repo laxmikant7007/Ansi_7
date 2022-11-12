@@ -2,5 +2,5 @@
 - hosts: webserverHost
   become: yes
   roles:
-  - {role: tomcatrole , ansible_os_family=="Debian" }
+  - {role: tomcatrole , when: ansible_os_family=="Debian" }
   
