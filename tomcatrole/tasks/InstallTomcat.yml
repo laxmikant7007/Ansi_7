@@ -1,15 +1,16 @@
 ---
 # Step 3.1 : /ntr directory on your server
-- name: i want to create directory ntr
-  file:
-           path: /home/ubuntu/ntr
-           state: directory
+#- name: i want to create directory tem
+ # file:
+  #         path: /home/ubuntu/ntr
+  
+  #        state: directory
 
-# Step 3.2 : download tomcat tar file in /ntr directory
+# Step 3.2 : download tomcat tar file in /temp directory
 - name: download tomcat tar file
   get_url:
     url: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.30/bin/apache-tomcat-9.0.30.tar.gz
-    dest: /home/ubuntu/ntr
+    dest: /home/ubuntu/temp
     force_basic_auth: yes
 
  # Step 3.3 : /opt/tomcat directory on your server
@@ -22,5 +23,5 @@
 # Step 3.4 : extract the archive file to /opt/tomcat
 - name: i want to extract the tomcat file
   command:
-    cmd: sudo tar xzvf /home/ubuntu/ntr -C /opt/tomcat --strip-components=1
+    cmd: sudo tar xzvf /home/ubuntu/temp -C /opt/tomcat --strip-components=1
     creates: /opt/tomcat/LICENSE
