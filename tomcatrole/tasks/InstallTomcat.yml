@@ -13,7 +13,7 @@
     force_basic_auth: yes
 
  # Step 3.3 : /opt/tomcat directory on your server
-- name: i want to create directory ntr
+- name: i want to create directory opt/tomcat
   file: 
            path: /opt/tomcat
            state: directory
@@ -23,4 +23,4 @@
 - name: i want to extract the tomcat file
   command:
     cmd: sudo tar xzvf /home/ubuntu/ntr -C /opt/tomcat --strip-components=1
-    creates: /opt/tomcat1/LICENSE
+    creates: /opt/tomcat/LICENSE
